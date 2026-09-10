@@ -1,8 +1,7 @@
 //Java w3schools
 //Introducción 
-/*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables (teraz tu jestem)*/
+/*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers (teraz tu jestem) */
 /*Recuerda que el nombre de la clase es el nombre del archivo*/
-
 public class Main {
     public static void main(String[] args) {
         String nombre = "José";
@@ -13,7 +12,6 @@ public class Main {
         boolean verdad = true;
         int miNumero = 7;
         miNumero = 8;
-
         System.out.println("Hola " + nombre + ", de " + edad + " años!" );
         System.out.println("Java es divertido!");
         System.out.print("Y eso es lo que me gusta!\n");
@@ -24,9 +22,22 @@ public class Main {
         System.out.println(letra);
         System.out.println(verdad);
         System.out.println(miNumero);
-
         /*final int cinco = 5;
         cinco = 6;
         System.out.println(cinco);*/
+        System.out.println(miNumero + edad);
+        System.out.println("La suma es " + miNumero + edad);
+        System.out.println("La suma es " + (miNumero + edad));
+        int g = 4;
+        int u = 3;
+        int t = 2;
+        System.out.println(g + u + t);
+        int f = 4, k = 3, j = 2;
+        System.out.println(f + k + j);
+        int h, o, p;
+        h = o = p = 50;
+        System.out.println(h + o + p);
+         
     }
-} 
+}
+
