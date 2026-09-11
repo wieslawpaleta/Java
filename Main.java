@@ -1,7 +1,8 @@
 //Java w3schools
 //Introducción 
-/*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers (teraz tu jestem) */
+/*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers, constants (final), Variables - Ejemplos (teraz tu jestem!)*/
 /*Recuerda que el nombre de la clase es el nombre del archivo*/
+
 public class Main {
     public static void main(String[] args) {
         String nombre = "José";
@@ -37,7 +38,18 @@ public class Main {
         int h, o, p;
         h = o = p = 50;
         System.out.println(h + o + p);
-         
+        
+        /*final 
+        int VEINTISÉIS = 26;
+        VEINTISÉIS = 20;
+        System.out.println(VEINTISÉIS )*/
+//Calculador
+        int longitud = 4;
+        int ancho = 6;
+        int área;
+        área = longitud * ancho;
+        System.out.println("La longitud es: " + longitud);
+        System.out.println("La ancho es: " + ancho);
+        System.out.println("La área es: " + área);         
     }
 }
-
