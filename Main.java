@@ -1,8 +1,7 @@
 //Java w3schools
 //Introducción 
-/*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers, constants (final), Variables - Ejemplos (teraz tu jestem!)*/
+/*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers, constants (final), Variables - Ejemplos, Variables code desafío, Tipos de datos, Numeros (Ahora estoy aquí!)*/
 /*Recuerda que el nombre de la clase es el nombre del archivo*/
-
 public class Main {
     public static void main(String[] args) {
         String nombre = "José";
@@ -38,18 +37,32 @@ public class Main {
         int h, o, p;
         h = o = p = 50;
         System.out.println(h + o + p);
-        
-        /*final 
+       
+        /*final
         int VEINTISÉIS = 26;
         VEINTISÉIS = 20;
         System.out.println(VEINTISÉIS )*/
-//Calculador
+//Calculador del rectángulo 
         int longitud = 4;
         int ancho = 6;
         int área;
         área = longitud * ancho;
         System.out.println("La longitud es: " + longitud);
         System.out.println("La ancho es: " + ancho);
-        System.out.println("La área es: " + área);         
+        System.out.println("La área es: " + área);        
+      
+        byte miByte = -128;
+        short miCorto = 32767;
+        long miLargo = 9223372036854775807L;
+        System.out.println(miByte + miCorto + miLargo);
+       
+        double miDoble = 7.89346d;
+        float f1 = 35e3f;
+        double d1 = 12E4d;
+        System.out.println(miDoble);
+        System.out.println(f1);
+        System.out.println(d1);
     }
 }
+
+
