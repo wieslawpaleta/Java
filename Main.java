@@ -1,6 +1,6 @@
 //Java w3schools
 //Introducción 
-/*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers, constants (final), Variables - Ejemplos, Variables code desafío, Tipos de datos, Numeros (Ahora estoy aquí!)*/
+/*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers, constants (final), Variables - Ejemplos, Variables code desafío, Tipos de datos, Numeros, Boolean Data Types, Characters, Data Types Examples */
 /*Recuerda que el nombre de la clase es el nombre del archivo*/
 public class Main {
     public static void main(String[] args) {
@@ -56,12 +56,24 @@ public class Main {
         long miLargo = 9223372036854775807L;
         System.out.println(miByte + miCorto + miLargo);
        
-        double miDoble = 7.89346d;
+        double  miDoble = 7.89346d;
+        System.out.println(miDoble);
         float f1 = 35e3f;
         double d1 = 12E4d;
-        System.out.println(miDoble);
         System.out.println(f1);
         System.out.println(d1);
+        boolean falsedad = false;
+        System.out.println(falsedad);
+        char miAscii = 65;
+        System.out.println(miAscii);
+        int artículos = 60;
+        float costoPorArtículo = 12.99f;
+        float costoTotal = artículos * costoPorArtículo;
+        char moneda = '€';
+        System.out.println("El número de artículos: " + artículos);
+        System.out.println("El costo por artículo: " + costoPorArtículo + moneda);
+        System.out.println("El costo total = " + costoTotal + moneda);
+/* Non-Primitivos tipos de datos (Ahora estoy aquí!) */
     }
 }
 
