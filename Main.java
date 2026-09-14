@@ -56,24 +56,35 @@ public class Main {
         long miLargo = 9223372036854775807L;
         System.out.println(miByte + miCorto + miLargo);
        
-        double  miDoble = 7.89346d;
-        System.out.println(miDoble);
+        double miDoble = 7.89346d;
         float f1 = 35e3f;
         double d1 = 12E4d;
         System.out.println(f1);
         System.out.println(d1);
-        boolean falsedad = false;
-        System.out.println(falsedad);
-        char miAscii = 65;
-        System.out.println(miAscii);
-        int artículos = 60;
-        float costoPorArtículo = 12.99f;
-        float costoTotal = artículos * costoPorArtículo;
-        char moneda = '€';
-        System.out.println("El número de artículos: " + artículos);
-        System.out.println("El costo por artículo: " + costoPorArtículo + moneda);
-        System.out.println("El costo total = " + costoTotal + moneda);
-/* Non-Primitivos tipos de datos (Ahora estoy aquí!) */
+        System.out.println(miDoble);
+         boolean falsedad = false;
+         System.out.println(falsedad);
+         char miAscii = 65;
+         System.out.println(miAscii);
+         int artículos = 60;
+         float costoPorArtículo = 12.99f;
+         float costoTotal = artículos * costoPorArtículo;
+         char moneda = '€';
+   
+System.out.println("El número de artículos: " + artículos);
+System.out.println("El costo por artículo: " + costoPorArtículo + moneda);
+System.out.println("El costo total = " + costoTotal + moneda);
+/* Non-Primitivos tipos de datos, var palabra clave, desafío de código de tipos de datos, fundición de tipos (Ahora estoy aquí!) */
+        var pe = 5;
+        System.out.println(pe);
+/*        ArrayList<String> coches = new Arraylist<String>(); 
+        var coches = new ArrayList<String>();*/
+/*Widening Casting (automáticamente)
+        int miInti = 8;
+        double miDoblee = miInti;
+        System.out.println(miInti);
+        System.out.println(miDoblee);
+Narrowing Casting (manualmente)*/
     }
 }
 
