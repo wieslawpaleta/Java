@@ -1,5 +1,5 @@
 //Java w3schools
-//Introducción 
+//Introducción
 /*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers, constants (final), Variables - Ejemplos, Variables code desafío, Tipos de datos, Numeros, Boolean Data Types, Characters, Data Types Examples */
 /*Recuerda que el nombre de la clase es el nombre del archivo*/
 public class Main {
@@ -42,7 +42,7 @@ public class Main {
         int VEINTISÉIS = 26;
         VEINTISÉIS = 20;
         System.out.println(VEINTISÉIS )*/
-//Calculador del rectángulo 
+//Calculador del rectángulo
         int longitud = 4;
         int ancho = 6;
         int área;
@@ -50,7 +50,7 @@ public class Main {
         System.out.println("La longitud es: " + longitud);
         System.out.println("La ancho es: " + ancho);
         System.out.println("La área es: " + área);        
-      
+     
         byte miByte = -128;
         short miCorto = 32767;
         long miLargo = 9223372036854775807L;
@@ -74,17 +74,80 @@ public class Main {
 System.out.println("El número de artículos: " + artículos);
 System.out.println("El costo por artículo: " + costoPorArtículo + moneda);
 System.out.println("El costo total = " + costoTotal + moneda);
-/* Non-Primitivos tipos de datos, var palabra clave, desafío de código de tipos de datos, fundición de tipos (Ahora estoy aquí!) */
+/* Non-Primitivos tipos de datos, var palabra clave, desafío de código de tipos de datos, fundición de tipos, operadores*/
         var pe = 5;
         System.out.println(pe);
-/*        ArrayList<String> coches = new Arraylist<String>(); 
+/*        ArrayList<String> coches = new Arraylist<String>();
         var coches = new ArrayList<String>();*/
+
+        
 /*Widening Casting (automáticamente)
+
+
         int miInti = 8;
         double miDoblee = miInti;
         System.out.println(miInti);
         System.out.println(miDoblee);
-Narrowing Casting (manualmente)*/
+
+
+Narrowing Casting (manualmente)
+        double miDoblee1 = 9.78d;
+        int miInti1 = (int) miDoblee1;
+        System.out.println(miDoblee1);
+        System.out.println(miInti1);*/
+
+
+//un ejemplo práctico 
+        int maxPuntos = 500;
+        int usuarioPuntos = 423;
+        double porcentaje = (double) usuarioPuntos / maxPuntos * 100.0d;
+        System.out.println("El porcentaje del usuario es " + porcentaje);
+
+
+        int suma4 = 100 + 50;
+        int suma5 = suma4 + 250;
+        int suma6 = suma5 + suma5;
+        System.out.println(suma6);
+
+
+/* operadores aritméticos */     
+        System.out.println(g + u);
+        System.out.println(g - u);
+        System.out.println(g * u);
+        System.out.println(g / u);
+        System.out.println(g % u);
+        ++g;
+        System.out.println(g);
+        --g;
+        System.out.println(g);
+
+
+        int ao = 10;
+        int bo = 3;
+        System.out.println(ao / bo);
+
+        double co = 10.0d;
+        double eo = 3.0d;
+        System.out.println(co / eo);
+
+
+//un ejemplo práctico 
+
+
+        int genteEnHabitación = 0;
+
+        genteEnHabitación++;
+        genteEnHabitación++;
+        genteEnHabitación++;
+
+        System.out.println(genteEnHabitación);
+
+        genteEnHabitación--;
+
+        System.out.println(genteEnHabitación);
+
+
+/* Assignment Operators (Ahora estoy aquí!) */
     }
 }
 
