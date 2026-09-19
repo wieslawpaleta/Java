@@ -79,38 +79,27 @@ System.out.println("El costo total = " + costoTotal + moneda);
         System.out.println(pe);
 /*        ArrayList<String> coches = new Arraylist<String>();
         var coches = new ArrayList<String>();*/
-
-        
+       
 /*Widening Casting (automáticamente)
-
-
         int miInti = 8;
         double miDoblee = miInti;
         System.out.println(miInti);
         System.out.println(miDoblee);
-
-
 Narrowing Casting (manualmente)
         double miDoblee1 = 9.78d;
         int miInti1 = (int) miDoblee1;
         System.out.println(miDoblee1);
         System.out.println(miInti1);*/
-
-
-//un ejemplo práctico 
+//un ejemplo práctico
         int maxPuntos = 500;
         int usuarioPuntos = 423;
         double porcentaje = (double) usuarioPuntos / maxPuntos * 100.0d;
         System.out.println("El porcentaje del usuario es " + porcentaje);
-
-
         int suma4 = 100 + 50;
         int suma5 = suma4 + 250;
         int suma6 = suma5 + suma5;
         System.out.println(suma6);
-
-
-/* operadores aritméticos */     
+/* operadores aritméticos */    
         System.out.println(g + u);
         System.out.println(g - u);
         System.out.println(g * u);
@@ -120,35 +109,81 @@ Narrowing Casting (manualmente)
         System.out.println(g);
         --g;
         System.out.println(g);
-
-
         int ao = 10;
         int bo = 3;
         System.out.println(ao / bo);
-
         double co = 10.0d;
         double eo = 3.0d;
         System.out.println(co / eo);
-
-
-//un ejemplo práctico 
-
-
+//un ejemplo práctico
         int genteEnHabitación = 0;
-
         genteEnHabitación++;
         genteEnHabitación++;
         genteEnHabitación++;
-
         System.out.println(genteEnHabitación);
-
         genteEnHabitación--;
-
         System.out.println(genteEnHabitación);
-
-
-/* Assignment Operators (Ahora estoy aquí!) */
-    }
+/* Assignment Operators */
+        int fo = 10;
+        fo += 5;
+        fo -= 5;
+        fo *= 5;
+        fo /= 5;
+        fo %= 5;
+        fo &= 5;
+        fo |= 5;
+        fo ^= 5;
+        fo >>= 5;
+        fo <<= 5;
+        System.out.println(fo);
+// un ejemplo práctico
+        int ahorros = 100;
+        ahorros += 50;
+        System.out.println("Ahorros totales: " + ahorros);
+// Operadores de comparación
+        int go = 5;
+        int ho = 3;
+        System.out.println(go == ho);
+        System.out.println(go != ho);
+        System.out.println(go > ho);
+        System.out.println(go < ho);
+        System.out.println(go >= ho);
+        System.out.println(go <= ho);
+// un ejemplo práctico
+        int edad1 = 18;
+        System.out.println(edad1 >= 18);
+        System.out.println(edad1 < 18);
+// un otro ejemplo práctico
+        int longitudDeLaContraseña = 5;
+        System.out.println(longitudDeLaContraseña >= 8);
+        System.out.println(longitudDeLaContraseña < 8);
+// operadores lógicos
+// un ejemplo práctico
+        boolean haIniciadoSesión = true;
+        boolean esAdministrador = false;
+        System.out.println("Usuario habitual: " + (haIniciadoSesión && !esAdministrador));
+        System.out.println("Tiene acceso: " + (haIniciadoSesión || esAdministrador));
+        System.out.println("No ha iniciado sesión: " + (!haIniciadoSesión));
+// Prioridad de la operadora
+     
+        int resultado2 = 2 + 3 * 4;
+        int resultado3 = (2 + 3) * 4;
+        System.out.println(resultado2);
+        System.out.println(resultado3);
+    
+        int resultado4 = 10 - 2 + 5;
+        int resultado5 = 10 - (2 + 5);
+        System.out.println(resultado4);
+        System.out.println(resultado5);
+//desafío de código de operadores
+//Strings
+        String texto0 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        System.out.println("La longitud del texto string es: " + texto0.length());
+      }
 }
+
+
+
+
 
 
