@@ -179,11 +179,21 @@ Narrowing Casting (manualmente)
 //Strings
         String texto0 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         System.out.println("La longitud del texto string es: " + texto0.length());
+        String texto1 = "¡Hola el mundo!";
+        String texto2 = "Buenos días ";
+        String texto3 = "Hola";
+        String texto4 = "Hola";
+        String texto5 = "   ¡Hola todo el mundo!   ";
+        System.out.println(texto1.toUpperCase());
+        System.out.println(texto1.toLowerCase());
+        System.out.println(texto1.indexOf("el"));
+        System.out.println(texto1.charAt(0));
+        System.out.println(texto1.equals(texto2));
+        System.out.println(texto3.equals(texto4));
+        System.out.println("Antes: [" + texto5 + "]");
+        System.out.println("Después:  [" + texto5.trim() + "]");
+//String concatenación 
       }
 }
-
-
-
-
 
 
