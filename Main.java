@@ -170,7 +170,7 @@ Narrowing Casting (manualmente)
         int resultado3 = (2 + 3) * 4;
         System.out.println(resultado2);
         System.out.println(resultado3);
-    
+   
         int resultado4 = 10 - 2 + 5;
         int resultado5 = 10 - (2 + 5);
         System.out.println(resultado4);
@@ -192,7 +192,22 @@ Narrowing Casting (manualmente)
         System.out.println(texto3.equals(texto4));
         System.out.println("Antes: [" + texto5 + "]");
         System.out.println("Después:  [" + texto5.trim() + "]");
-//String concatenación 
+//String concatenación
+        String tuNombre = "Juan";
+        String tuApellido = "Rodriguez";
+        String tuSegundoNombre = "Marco";
+        String tuResultado = tuNombre.concat(tuSegundoNombre).concat(tuApellido);
+        System.out.println(tuNombre.concat(tuApellido));
+        System.out.println(tuResultado);
+//String/Numeros y Strings
+        String za = "10";
+        String ya = "20";
+        String xa = za + ya;
+        String wa = za + edad1;
+        System.out.println(xa + wa);
+//String/caracteres especiales
+        String texto90 = "Somos\\ los llamados \"vikingos\" del n\'orte.";
+        System.out.println(texto90);
       }
 }
 
