@@ -206,8 +206,22 @@ Narrowing Casting (manualmente)
         String wa = za + edad1;
         System.out.println(xa + wa);
 //String/caracteres especiales
-        String texto90 = "Somos\\ los llamados \"vikingos\" del n\'orte.";
+        String texto90 = "Somos\\ los\t\b\r\f llamados \"vikingos\" del n\'orte.";
         System.out.println(texto90);
+// String/ eñ desafío de código de Strings
+// Math
+        System.out.println(Math.max(5, 6));
+        System.out.println(Math.min(5, 10));
+        System.out.println(Math.sqrt(64));
+        System.out.println(Math.abs(-4.7));
+        System.out.println(Math.pow(2, 8));
+        System.out.println(Math.round(9.7));
+        System.out.println(Math.ceil(6.1));
+        System.out.println(Math.floor(4.9));
+        System.out.println(Math.random());
+        int númeroalestorio = (int) (Math.random() * 101);
+        System.out.println(númeroalestorio);
+// Booleans, Booleans/Booleans Ejemplos 
       }
 }
 
