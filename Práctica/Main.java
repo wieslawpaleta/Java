@@ -221,8 +221,31 @@ Narrowing Casting (manualmente)
         System.out.println(Math.random());
         int númeroalestorio = (int) (Math.random() * 101);
         System.out.println(númeroalestorio);
-// Booleans, Booleans/Booleans Ejemplos 
+// Booleans, Booleans/Booleans Ejemplos,
+// Booleans/desafío de código de Booleans
+        int miEdad4 = 25;
+        int edadParaVotar = 18;
+        //System.out.println(miEdad4 >= edadParaVotar);
+        if (miEdad4 >= edadParaVotar) {
+          System.out.println("Puedes votar!");
+        } else {
+          System.out.println("No puedes votar!");
+}
+
+
+
+
+//If…Else/if, If…Else/else/ If…Else/Else if
+        
+
+
       }
 }
+
+
+
+
+
+
 
 
