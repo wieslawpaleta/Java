@@ -235,12 +235,84 @@ Narrowing Casting (manualmente)
 
 
 
+
+
+
+
 //If…Else/if, If…Else/else/ If…Else/Else if
-        
+        int laClima = 2;
+        if (laClima == 1) {
+        System.out.println("Lleva un paraguas");
+} else if (laClima == 2) {
+        System.out.println("Usa gafas de sol.");
+} else {
+        System.out.println("Simplemente sal a la calle normalmente.");
+}
+
+
+
+
+        int tiempo = 13;
+
+
+        if (tiempo < 14) {
+        System.out.println("Buenos días.");
+} else if (tiempo < 22) {
+        System.out.println("Buenas tardes.");
+} else {
+        System.out.println("Buenas noches.");
+}
+
+
+//If…Else/Short Hand If...Else (Ternary Operator)
+        int tiempo1 = 20;
+        String resultado11 = (tiempo1 < 18) ? "Buenos días." : "Buenas tardes.";
+        System.out.println(resultado11);
+
+
+
+
+        int tiempo2 = 20;
+        System.out.println((tiempo2 < 18) ? "Buenos días." : "Buenas tardes.");
+
+
+
+
+        int tiempo3 = 22;
+        String mensaje1 = (tiempo3 < 12) ? "Buenos días." : (tiempo3 < 18) ? "Buenas tardes." : "Buenas Noches.";
+        System.out.println(mensaje1);
+
+
+
+
+//If…Else/Nested If
+        int x = 15;
+        int y = 25;
+
+
+        if (x > 10) {
+          System.out.println("x");
+}
+
+
+
+
+
+
+
+
+
+
 
 
       }
 }
+
+
+
+
+
+
 
 
 
