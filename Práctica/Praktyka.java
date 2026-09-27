@@ -234,6 +234,9 @@ public class Praktyka {
 
 
 
+
+
+
 // //If…Else/if, If…Else/else/ If…Else/Else if
 //         int laClima = 2;
 //         if (laClima == 1) {
@@ -244,7 +247,9 @@ public class Praktyka {
 //         System.out.println("Simplemente sal a la calle normalmente.");
 // }
 
+
 //         int tiempo = 13;
+
 
 //         if (tiempo < 14) {
 //         System.out.println("Buenos días.");
@@ -255,14 +260,20 @@ public class Praktyka {
 // }
 
 
+
+
 // //If…Else/Short Hand If...Else (Ternary Operator)
 //         int tiempo1 = 20;
 //         String resultado11 = (tiempo1 < 18) ? "Buenos días." : "Buenas tardes.";
 //         System.out.println(resultado11);
 
 
+
+
 //         int tiempo2 = 20;
 //         System.out.println((tiempo2 < 18) ? "Buenos días." : "Buenas tardes.");
+
+
 
 
 //         int tiempo3 = 22;
@@ -270,9 +281,13 @@ public class Praktyka {
 //         System.out.println(mensaje1);
 
 
+
+
 // //If…Else/Nested If
 //         int x = 15;
 //         int y = 25;
+
+
 
 
 //         if (x > 10) {
@@ -283,33 +298,106 @@ public class Praktyka {
 // }
 
 
-        int edad = 20;
-        boolean esCiudadano = true;
 
 
-        if (edad >= 18) {
-        System.out.println("Edad suficiente para votar.");
-
-
-        if (esCiudadano) {
-        System.out.println("Y tú eres ciudadano, así que puedes votar!");
-} else {
-        System.out.println("Pero tú debes ser ciudadano para votar.");
-} 
-} else {
-        System.out.println("Edad insuficiente para votar.");
-}
+//         int edad = 20;
+//         boolean esCiudadano = true;
 
 
 
 
-//If…Else/Operadores lógicos 
+//         if (edad >= 18) {
+//         System.out.println("Edad suficiente para votar.");
 
 
+
+
+//         if (esCiudadano) {
+//         System.out.println("Y tú eres ciudadano, así que puedes votar!");
+// } else {
+//         System.out.println("Pero tú debes ser ciudadano para votar.");
+// }
+// } else {
+//         System.out.println("Edad insuficiente para votar.");
+// }
+
+
+
+
+// //If…Else/Operadores lógicos
+//         boolean haIniciadoSesión = true;
+//         boolean esAdmin = false;
+
+
+//         System.out.println("Usuario habitual: " + (haIniciadoSesión && !esAdmin));
+//         System.out.println("Tiene acceso: " + (haIniciadoSesión || esAdmin));
+//         System.out.println("No ha iniciado Sesión: " + (!haIniciadoSesión));
+
+
+
+
+// //Operadores/Prioridad de los operadores/desafío de código de operadores 
+//         int resultado1 = 2 + 3 * 4;
+//         int resultado2 = (2 + 3) * 4;
+
+
+//         System.out.println(resultado1);
+//         System.out.println(resultado2);
+
+
+
+
+        // int resultado1 = 10 - 2 + 5;
+        // int resultado2 = 10 - (2 + 5);
+
+
+        // System.out.println(resultado1);
+        // System.out.println(resultado2);
+
+
+
+
+//Strings/Strings
 
 
       }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
