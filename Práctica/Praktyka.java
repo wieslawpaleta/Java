@@ -237,6 +237,12 @@ public class Praktyka {
 
 
 
+
+
+
+
+
+
 // //If…Else/if, If…Else/else/ If…Else/Else if
 //         int laClima = 2;
 //         if (laClima == 1) {
@@ -248,7 +254,11 @@ public class Praktyka {
 // }
 
 
+
+
 //         int tiempo = 13;
+
+
 
 
 //         if (tiempo < 14) {
@@ -262,6 +272,10 @@ public class Praktyka {
 
 
 
+
+
+
+
 // //If…Else/Short Hand If...Else (Ternary Operator)
 //         int tiempo1 = 20;
 //         String resultado11 = (tiempo1 < 18) ? "Buenos días." : "Buenas tardes.";
@@ -270,8 +284,16 @@ public class Praktyka {
 
 
 
+
+
+
+
 //         int tiempo2 = 20;
 //         System.out.println((tiempo2 < 18) ? "Buenos días." : "Buenas tardes.");
+
+
+
+
 
 
 
@@ -283,9 +305,17 @@ public class Praktyka {
 
 
 
+
+
+
+
 // //If…Else/Nested If
 //         int x = 15;
 //         int y = 25;
+
+
+
+
 
 
 
@@ -300,14 +330,26 @@ public class Praktyka {
 
 
 
+
+
+
+
 //         int edad = 20;
 //         boolean esCiudadano = true;
 
 
 
 
+
+
+
+
 //         if (edad >= 18) {
 //         System.out.println("Edad suficiente para votar.");
+
+
+
+
 
 
 
@@ -324,9 +366,15 @@ public class Praktyka {
 
 
 
+
+
+
+
 // //If…Else/Operadores lógicos
 //         boolean haIniciadoSesión = true;
 //         boolean esAdmin = false;
+
+
 
 
 //         System.out.println("Usuario habitual: " + (haIniciadoSesión && !esAdmin));
@@ -336,9 +384,15 @@ public class Praktyka {
 
 
 
-// //Operadores/Prioridad de los operadores/desafío de código de operadores 
+
+
+
+
+// //Operadores/Prioridad de los operadores/desafío de código de operadores
 //         int resultado1 = 2 + 3 * 4;
 //         int resultado2 = (2 + 3) * 4;
+
+
 
 
 //         System.out.println(resultado1);
@@ -347,8 +401,14 @@ public class Praktyka {
 
 
 
+
+
+
+
         // int resultado1 = 10 - 2 + 5;
         // int resultado2 = 10 - (2 + 5);
+
+
 
 
         // System.out.println(resultado1);
@@ -357,11 +417,104 @@ public class Praktyka {
 
 
 
-//Strings/Strings
+
+
+
+
+//Strings/Strings, Strings/Concatenación, Strings/Números y Strings, Strings/caracteres especiales, Strings/El desafío de código de Strings,
+        String x = "10";
+        int y = 20;
+        String z = x + y;
+
+        System.out.println(z);
+
+
+
+
+//Math/Math
+        System.out.println(Math.max(5, 10));
+        System.out.println(Math.min(5, 10));
+        
+
+
+
+
 
 
       }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
