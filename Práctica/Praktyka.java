@@ -232,6 +232,7 @@ public class Praktyka {
 //           System.out.println("No puedes votar!");
 // }
 
+
 // //If…Else/if, If…Else/else/ If…Else/Else if
 //         int laClima = 2;
 //         if (laClima == 1) {
@@ -243,7 +244,11 @@ public class Praktyka {
 // }
 
 
+
+
 //         int tiempo = 13;
+
+
 
 
 //         if (tiempo < 14) {
@@ -255,13 +260,18 @@ public class Praktyka {
 // }
 
 
+
+
 // //If…Else/Short Hand If...Else (Ternary Operator)
 //         int tiempo1 = 20;
 //         String resultado11 = (tiempo1 < 18) ? "Buenos días." : "Buenas tardes.";
 //         System.out.println(resultado11);
 
+
 //         int tiempo2 = 20;
 //         System.out.println((tiempo2 < 18) ? "Buenos días." : "Buenas tardes.");
+
+
 
 
 //         int tiempo3 = 22;
@@ -269,9 +279,14 @@ public class Praktyka {
 //         System.out.println(mensaje1);
 
 
+
+
 // //If…Else/Nested If
 //         int x = 15;
 //         int y = 25;
+
+
+
 
 
 
@@ -283,13 +298,21 @@ public class Praktyka {
 // }
 
 
+
+
 //         int edad = 20;
 //         boolean esCiudadano = true;
 
 
 
+
+
+
 //         if (edad >= 18) {
 //         System.out.println("Edad suficiente para votar.");
+
+
+
 
 
 
@@ -304,14 +327,23 @@ public class Praktyka {
 
 
 
+
+
+
 // //If…Else/Operadores lógicos
 //         boolean haIniciadoSesión = true;
 //         boolean esAdmin = false;
 
 
+
+
 //         System.out.println("Usuario habitual: " + (haIniciadoSesión && !esAdmin));
 //         System.out.println("Tiene acceso: " + (haIniciadoSesión || esAdmin));
 //         System.out.println("No ha iniciado Sesión: " + (!haIniciadoSesión));
+
+
+
+
 
 
 
@@ -323,8 +355,19 @@ public class Praktyka {
 
 
 
+
+
+
+
 //         System.out.println(resultado1);
 //         System.out.println(resultado2);
+
+
+
+
+
+
+
 
 
 
@@ -340,8 +383,21 @@ public class Praktyka {
 
 
 
+
+
+
+
+
+
         // System.out.println(resultado1);
         // System.out.println(resultado2);
+
+
+
+
+
+
+
 
 
 
@@ -356,7 +412,13 @@ public class Praktyka {
 
 
 
+
+
+
         // System.out.println(z);
+
+
+
 
 
 
@@ -376,9 +438,16 @@ public class Praktyka {
 
 
 
+
+
+
 // //Booleans/Booleans
 //         int x = 10;
 //         int y = 9;
+
+
+
+
 
 
 
@@ -388,15 +457,27 @@ public class Praktyka {
 
 
 
+
+
+
+
 // System.out.println(esMayor);
 
+
 //booleanos/ejemplos de booleanos, booleanos/desafío de código de booleanos
+//If…Else/if
 //         boolean estáLloviendo = true;
+
+
 
 
 //         if (estáLloviendo) {
 //           System.out.println("Lleva un paragauas!");
 // }
+
+
+
+
 
 
 
@@ -409,6 +490,9 @@ public class Praktyka {
 
 
 
+
+
+
 //          int y = 20;
 //          int x = 20;
 //          if (x == y){
@@ -416,11 +500,40 @@ public class Praktyka {
 // }
 
 
-        boolean estáLaLuzEncendida = true;
 
 
+//         boolean estáLaLuzEncendida = true;
+
+
+//         if (estáLaLuzEncendida) {
+//         System.out.println("La luz está encendida.");
+// }
+
+
+// //If…Else/Else
+//         boolean estáLloviendo = true;
+
+//          if (estáLloviendo) {
+//            System.out.println("Lleva un paragauas!");
+// } else {
+//            System.out.println("Hoy no llueve, no es necesario llevar paraguas");
+// }
+//         int tiempo = 20;  
+//         if (tiempo < 18) {
+//         System.out.println("Buenos días "); } else {   
+//         System.out.println("Buenas tardes "); }
+
+
+
+
+//If.Else/Else If
 
 
       }
 }
+
+
+
+
+
 
