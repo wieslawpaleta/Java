@@ -232,9 +232,6 @@ public class Praktyka {
 //           System.out.println("No puedes votar!");
 // }
 
-
-
-
 // //If…Else/if, If…Else/else/ If…Else/Else if
 //         int laClima = 2;
 //         if (laClima == 1) {
@@ -245,21 +242,7 @@ public class Praktyka {
 //         System.out.println("Simplemente sal a la calle normalmente.");
 // }
 
-
-
-
-
-
-
-
 //         int tiempo = 13;
-
-
-
-
-
-
-
 
 //         if (tiempo < 14) {
 //         System.out.println("Buenos días.");
@@ -269,29 +252,14 @@ public class Praktyka {
 //         System.out.println("Buenas noches.");
 // }
 
-
-
-
-
-
-
-
 // //If…Else/Short Hand If...Else (Ternary Operator)
 //         int tiempo1 = 20;
 //         String resultado11 = (tiempo1 < 18) ? "Buenos días." : "Buenas tardes.";
 //         System.out.println(resultado11);
 
 
-
-
 //         int tiempo2 = 20;
 //         System.out.println((tiempo2 < 18) ? "Buenos días." : "Buenas tardes.");
-
-
-
-
-
-
 
 
 //         int tiempo3 = 22;
@@ -299,24 +267,9 @@ public class Praktyka {
 //         System.out.println(mensaje1);
 
 
-
-
-
-
-
-
 // //If…Else/Nested If
 //         int x = 15;
 //         int y = 25;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -328,38 +281,12 @@ public class Praktyka {
 // }
 
 
-
-
-
-
-
-
 //         int edad = 20;
 //         boolean esCiudadano = true;
 
 
-
-
-
-
-
-
-
-
-
-
 //         if (edad >= 18) {
 //         System.out.println("Edad suficiente para votar.");
-
-
-
-
-
-
-
-
-
-
 
 
 //         if (esCiudadano) {
@@ -372,25 +299,9 @@ public class Praktyka {
 // }
 
 
-
-
-
-
-
-
-
-
-
-
 // //If…Else/Operadores lógicos
 //         boolean haIniciadoSesión = true;
 //         boolean esAdmin = false;
-
-
-
-
-
-
 
 
 //         System.out.println("Usuario habitual: " + (haIniciadoSesión && !esAdmin));
@@ -398,123 +309,21 @@ public class Praktyka {
 //         System.out.println("No ha iniciado Sesión: " + (!haIniciadoSesión));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // //Operadores/Prioridad de los operadores/desafío de código de operadores
 //         int resultado1 = 2 + 3 * 4;
 //         int resultado2 = (2 + 3) * 4;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //         System.out.println(resultado1);
 //         System.out.println(resultado2);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // int resultado1 = 10 - 2 + 5;
         // int resultado2 = 10 - (2 + 5);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // System.out.println(resultado1);
         // System.out.println(resultado2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Strings/Strings, Strings/Concatenación, Strings/Números y Strings, Strings/caracteres especiales, Strings/El desafío de código de Strings,
@@ -523,27 +332,7 @@ public class Praktyka {
         // String z = x + y;
 
 
-
-
-
-
-
-
-
-
-
-
         // System.out.println(z);
-
-
-
-
-
-
-
-
-
-
 
 
 //Math/Math
@@ -559,57 +348,14 @@ public class Praktyka {
        
 //         int númeroaleatorio = (int) (Math.random() * 101);
 //         System.out.println(númeroaleatorio);
-
-
-
-
-
-
-
-
-
-
-
-
 // //Booleans/Booleans
 //         int x = 10;
 //         int y = 9;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // boolean esMayor = x > y;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // System.out.println(esMayor);
-
-
 
 
 //booleanos/ejemplos de booleanos, booleanos/desafío de código de booleanos
@@ -617,29 +363,9 @@ public class Praktyka {
 //         boolean estáLloviendo = true;
 
 
-
-
-
-
-
-
 //         if (estáLloviendo) {
 //           System.out.println("Lleva un paragauas!");
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //          int y = 18;
@@ -649,16 +375,6 @@ public class Praktyka {
 // }
 
 
-
-
-
-
-
-
-
-
-
-
 //          int y = 20;
 //          int x = 20;
 //          if (x == y){
@@ -666,21 +382,10 @@ public class Praktyka {
 // }
 
 
-
-
-
-
-
-
 //         boolean estáLaLuzEncendida = true;
-
-
-
-
 //         if (estáLaLuzEncendida) {
 //         System.out.println("La luz está encendida.");
 // }
-
 
 
 
@@ -708,30 +413,61 @@ public class Praktyka {
 // } else {    System.out.println("Sal afuera.");
 //  }
 //If…Else/Mano corto If…Else
-        if elTiempo = 20;
-        String elResultado = (elTiempo < 18) ? "Buenos días" : "Buenas tardes";
-        System.out.println(elResultado);
+//         int elTiempo = 20;
+//         String elResultado = (elTiempo < 18) ? "Buenos días" : "Buenas tardes";
+//         System.out.println(elResultado);
 
 
-        if eltiempo = 20;
-        System.out.println((eltiempo < 18) ? "Buenos días" : "Buenas tardes");
+//         int eltiempo = 20;
+//         System.out.println((eltiempo < 18) ? "Buenos días" : "Buenas tardes");
 
 
-      }
-}
+//         int eLtiempo = 22;
+//         String elMensaje = (eLtiempo < 12) ? "Buenos días" : (eLtiempo < 18) ? "Buenas tardes" : "Buenas noches";
+//         System.out.println(elMensaje);
 
 
+// //If…else/If anidado
+//         int x = 15;
+//         int y = 25;  if (x > 10) {
+//         System.out.println("x es mayor que 10");    
+//         if (y > 20) {
+//         System.out.println("y es también mayor que 20");  
+//  }
+// }
 
 
+//          int laEdad = 20;
+//          boolean eselCiudadano = true;  
+//          if (laEdad >= 18) {
+//          System.out.println("Edad suficiente para votar.");      
+//          if (eselCiudadano) {
+//         System.out.println("Y eres ciudadano, así que puedes votar!");  
+// } else {    
+//         System.out.println("Pero debes ser ciudadano para votar.");  
+// } } else {   System.out.println("Sin edad suficiente para votar."); }
 
 
+// //If…Else/Operadores lógicos en las condiciones 
+//        int a = 200;
+//        int b = 33;
+//        int c = 500;
 
 
+//        if (a > b && c > a) {
+//          System.out.println("Ambas condiciones son verdaderas.");
+// }
 
 
+//         if (a > b || a > c) {
+//           System.out.println("Al menos una condición es verdadera.");
+// }
 
 
+//         if (!(b > a)) {
+//           System.out.println("b no es mayor que a");
+// }
 
 
-
-
+  }
+ }
