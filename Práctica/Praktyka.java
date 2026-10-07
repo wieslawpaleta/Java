@@ -252,6 +252,9 @@ public class Praktyka {
 //         System.out.println("Buenas noches.");
 // }
 
+
+
+
 // //If…Else/Short Hand If...Else (Ternary Operator)
 //         int tiempo1 = 20;
 //         String resultado11 = (tiempo1 < 18) ? "Buenos días." : "Buenas tardes.";
@@ -261,17 +264,13 @@ public class Praktyka {
 //         int tiempo2 = 20;
 //         System.out.println((tiempo2 < 18) ? "Buenos días." : "Buenas tardes.");
 
-
 //         int tiempo3 = 22;
 //         String mensaje1 = (tiempo3 < 12) ? "Buenos días." : (tiempo3 < 18) ? "Buenas tardes." : "Buenas Noches.";
 //         System.out.println(mensaje1);
 
-
 // //If…Else/Nested If
 //         int x = 15;
 //         int y = 25;
-
-
 
 //         if (x > 10) {
 //           System.out.println("x es mayor que 10");
@@ -280,14 +279,11 @@ public class Praktyka {
 //  }
 // }
 
-
 //         int edad = 20;
 //         boolean esCiudadano = true;
 
-
 //         if (edad >= 18) {
 //         System.out.println("Edad suficiente para votar.");
-
 
 //         if (esCiudadano) {
 //         System.out.println("Y tú eres ciudadano, así que puedes votar!");
@@ -298,33 +294,26 @@ public class Praktyka {
 //         System.out.println("Edad insuficiente para votar.");
 // }
 
-
 // //If…Else/Operadores lógicos
 //         boolean haIniciadoSesión = true;
 //         boolean esAdmin = false;
-
 
 //         System.out.println("Usuario habitual: " + (haIniciadoSesión && !esAdmin));
 //         System.out.println("Tiene acceso: " + (haIniciadoSesión || esAdmin));
 //         System.out.println("No ha iniciado Sesión: " + (!haIniciadoSesión));
 
-
 // //Operadores/Prioridad de los operadores/desafío de código de operadores
 //         int resultado1 = 2 + 3 * 4;
 //         int resultado2 = (2 + 3) * 4;
 
-
 //         System.out.println(resultado1);
 //         System.out.println(resultado2);
-
 
         // int resultado1 = 10 - 2 + 5;
         // int resultado2 = 10 - (2 + 5);
 
-
         // System.out.println(resultado1);
         // System.out.println(resultado2);
-
 
 //Strings/Strings, Strings/Concatenación, Strings/Números y Strings, Strings/caracteres especiales, Strings/El desafío de código de Strings,
         // String x = "10";
@@ -333,7 +322,6 @@ public class Praktyka {
 
 
         // System.out.println(z);
-
 
 //Math/Math
 //         System.out.println(Math.max(5, 10));
@@ -352,21 +340,17 @@ public class Praktyka {
 //         int x = 10;
 //         int y = 9;
 
-
 // boolean esMayor = x > y;
 
 // System.out.println(esMayor);
-
 
 //booleanos/ejemplos de booleanos, booleanos/desafío de código de booleanos
 //If…Else/if
 //         boolean estáLloviendo = true;
 
-
 //         if (estáLloviendo) {
 //           System.out.println("Lleva un paragauas!");
 // }
-
 
 //          int y = 18;
 //          int x = 20;
@@ -374,24 +358,19 @@ public class Praktyka {
 //          System.out.println("x es mayor que y");
 // }
 
-
 //          int y = 20;
 //          int x = 20;
 //          if (x == y){
 //          System.out.println("x es igual a y");
 // }
 
-
 //         boolean estáLaLuzEncendida = true;
 //         if (estáLaLuzEncendida) {
 //         System.out.println("La luz está encendida.");
 // }
 
-
-
 // //If…Else/Else
 //         boolean estáLloviendo = true;
-
 
 //          if (estáLloviendo) {
 //            System.out.println("Lleva un paragauas!");
@@ -417,15 +396,12 @@ public class Praktyka {
 //         String elResultado = (elTiempo < 18) ? "Buenos días" : "Buenas tardes";
 //         System.out.println(elResultado);
 
-
 //         int eltiempo = 20;
 //         System.out.println((eltiempo < 18) ? "Buenos días" : "Buenas tardes");
-
 
 //         int eLtiempo = 22;
 //         String elMensaje = (eLtiempo < 12) ? "Buenos días" : (eLtiempo < 18) ? "Buenas tardes" : "Buenas noches";
 //         System.out.println(elMensaje);
-
 
 // //If…else/If anidado
 //         int x = 15;
@@ -435,7 +411,6 @@ public class Praktyka {
 //         System.out.println("y es también mayor que 20");  
 //  }
 // }
-
 
 //          int laEdad = 20;
 //          boolean eselCiudadano = true;  
@@ -447,17 +422,14 @@ public class Praktyka {
 //         System.out.println("Pero debes ser ciudadano para votar.");  
 // } } else {   System.out.println("Sin edad suficiente para votar."); }
 
-
-// //If…Else/Operadores lógicos en las condiciones 
+// //If…Else/Operadores lógicos en las condiciones
 //        int a = 200;
 //        int b = 33;
 //        int c = 500;
 
-
 //        if (a > b && c > a) {
 //          System.out.println("Ambas condiciones son verdaderas.");
 // }
-
 
 //         if (a > b || a > c) {
 //           System.out.println("Al menos una condición es verdadera.");
@@ -468,6 +440,107 @@ public class Praktyka {
 //           System.out.println("b no es mayor que a");
 // }
 
+//          boolean haIniciadoSesión = true;
+//          boolean esAdmin = false;
+//          int elNiveldelaSeguridad = 3;
+
+//          if (haIniciadoSesión && (esAdmin || elNiveldelaSeguridad <= 2)) {
+//          System.out.println("Acceso concendido.");
+// } else {
+//          System.out.println("Acceso denegado.");
+// }
+
+
+
+
+// //If…else/ejemplos de la vida real
+//          int elCódigodelaPuerta = 1335;
+
+//          if (elCódigodelaPuerta == 1335) {
+//          System.out.println("El código correcto. La puerta está abierta ahora.");
+// } else {
+//          System.out.println("El código incorrecto. La puerta permanece cerrada.");
+// }
+
+//          int miNúmero = 10;
+
+
+//          if (miNúmero > 0) {
+//            System.out.println("El valor es un número positivo.");
+// } else if (miNúmero < 0) {
+//            System.out.println("El valor es un número negativo.");
+// } else {
+//            System.out.println("El valor es 0.");
+// }
+
+
+//If…Else/el desafío de código de condiciones 
+//Switch/Switch
+        int elDía = 4;
+        switch (elDía) {
+          case 1:
+            System.out.println("El lunes"); 
+            break;
+          case 2:
+            System.out.println("El martes");
+          case 3:
+            System.out.println("El miércoles");
+          case 4:
+            System.out.println("El jueves");
+          case 5:
+            System.out.println("El viernes");
+          case 6:
+            System.out.println("El sábado");
+          case 7:
+            System.out.println("El domingo");
+          default:
+            System.out.println("No curva el espacio-tiempo.");
+}
+
+
+
+
+//Switch/El desafío de código de Switch
+//While Loop/While Loop
+        int i = 0;
+        while (i < 5) {
+          System.out.println(i);
+          i++;
+}
+
+
+
+
+        int cuentaAtrás = 3;
+
+
+        while (cuentaAtrás > 0) {
+          System.out.println(cuentaAtrás);
+          cuentaAtrás--;
+}
+        System.out.println("¡Feliz año nuevo!!");
+
+
+        int i = 10;
+
+
+        while (i < 5) {
+          System.out.println("Esto nunca se imprimirá");
+          i++;
+}
+//Mientras bucle/Hacer/Mientras bucle
+
+
+
 
   }
  }
+
+
+
+
+
+
+
+
+
