@@ -476,62 +476,81 @@ public class Praktyka {
 
 //If…Else/el desafío de código de condiciones 
 //Switch/Switch
-        int elDía = 4;
-        switch (elDía) {
-          case 1:
-            System.out.println("El lunes"); 
-            break;
-          case 2:
-            System.out.println("El martes");
-          case 3:
-            System.out.println("El miércoles");
-          case 4:
-            System.out.println("El jueves");
-          case 5:
-            System.out.println("El viernes");
-          case 6:
-            System.out.println("El sábado");
-          case 7:
-            System.out.println("El domingo");
-          default:
-            System.out.println("No curva el espacio-tiempo.");
-}
+//         int elDía = 4;
+//         switch (elDía) {
+//           case 1:
+//             System.out.println("El lunes"); 
+//             break;
+//           case 2:
+//             System.out.println("El martes");
+//           case 3:
+//             System.out.println("El miércoles");
+//           case 4:
+//             System.out.println("El jueves");
+//           case 5:
+//             System.out.println("El viernes");
+//           case 6:
+//             System.out.println("El sábado");
+//           case 7:
+//             System.out.println("El domingo");
+//           default:
+//             System.out.println("No curva el espacio-tiempo.");
+// }
 
 
 
 
 //Switch/El desafío de código de Switch
 //While Loop/While Loop
-        int i = 0;
-        while (i < 5) {
-          System.out.println(i);
-          i++;
-}
+//         int i = 0;
+//         while (i < 5) {
+//           System.out.println(i);
+//           i++;
+// }
+//         int cuentaAtrás = 3;
 
 
+//         while (cuentaAtrás > 0) {
+//           System.out.println(cuentaAtrás);
+//           cuentaAtrás--;
+// }
+//         System.out.println("¡Feliz año nuevo!!");
 
 
-        int cuentaAtrás = 3;
+//         int i = 10;
 
 
-        while (cuentaAtrás > 0) {
-          System.out.println(cuentaAtrás);
-          cuentaAtrás--;
-}
-        System.out.println("¡Feliz año nuevo!!");
-
-
-        int i = 10;
-
-
-        while (i < 5) {
-          System.out.println("Esto nunca se imprimirá");
-          i++;
-}
+//         while (i < 5) {
+//           System.out.println("Esto nunca se imprimirá");
+//           i++;
+// }
 //Mientras bucle/Hacer/Mientras bucle
+//     int i = 0;
+//     do {
+//       System.out.println(i);
+//       i++;
+//     }
+//     while (i < 5);  
+
+//     int j = 10;
+
+//     do {
+//         System.out.println("j es: " + i);
+//         j++;
+//     } while (j < 5);
 
 
+//Mientras bucle//Los ejemplos del mientras bucle
+        // int elCuentaAtrás = 3;
 
+        // while (elCuentaAtrás > 0) {
+        //         System.out.println(elCuentaAtrás);
+        //         elCuentaAtrás--;
+        // }
+
+        // System.out.println("¡Feliz Año Nuevo!");
+
+       
 
   }
  }
