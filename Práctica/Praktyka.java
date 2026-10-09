@@ -550,7 +550,51 @@ public class Praktyka {
 
         // System.out.println("¡Feliz Año Nuevo!");
 
-       
+//         int elDado = 1;
+
+//         while (elDado <= 6) {
+//                 if (elDado < 6) {
+//                         System.out.println("No Yatzy.");
+//                 } else {
+//                         System.out.println("Yatzy!");
+//                 }
+//                 elDado = elDado + 1;
+//         }
+
+// //Mientras bucle/el desafio de codigo de mientra bucle
+// //Para bucle/Para bucle
+// for (int i = 0; i < 5; i++) {
+//         System.out.println(i);
+// }
+
+// for (int i = 0; i <= 10; i = i + 2) {
+//         System.out.println(i);
+// }
+
+// int laSuma = 0;
+// for (int i = 1; i <= 5; i++) {
+//         laSuma = laSuma + i;
+// }
+// System.out.println("La sume es " + laSuma);
+
+// for (int i = 5; i > 0; i--) {
+//         System.out.println(i);
+// }
+
+// for (int i = 10; i < 5; i++) {
+//         System.out.println("This will never be printed");
+// }
+
+//Para bucle/bucles anidados
+// for (int i = 1; i <= 2; i++) {
+//         System.out.println("Exterior: " + i);
+
+//         for (int j = 1; j <= 3; j++) {
+//                 System.out.println("Interior: " + j);
+//         }
+// }
+
+
 
   }
  }
