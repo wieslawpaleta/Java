@@ -595,6 +595,57 @@ public class Praktyka {
 // }
 
 
+// for (int i = 1; i <= 3; i++) {
+//         for (int j = 1; j <= 3; j++) {
+//                 System.out.print(i * j + " ");
+//         }
+//         System.out.println();
+// }
+
+//For Loop/For-Each Loop
+// String[] losCoches = {"Volvo", "BMW", "Ford", "Mazda"};
+
+// for (String elCoche: losCoches) {
+//         System.out.println(elCoche);
+// }
+
+
+// int[] losNúmeros = {10, 20, 30, 40};
+
+// for (int núm: losNúmeros) {
+//         System.out.println(núm);
+// }
+
+
+//Para bucle/Los ejemplos de para bucle, Para bucle/el desafio de codigo de para bucle
+// for (int i = 0; i <= 100; i += 10) {
+//         System.out.println(i);
+// }
+
+// for (int i = 0; i <= 10; i = i + 2) {
+//         System.out.println(i);
+// }
+
+// int elNúmero = 2;
+
+// for (int i = 1; i <= 10; i++) {
+//         System.out.println(elNúmero + "x" + i + " = " + (elNúmero * i));
+// }
+
+// for (int elAsiento = 1; elAsiento <= 5; elAsiento++) {
+//         System.out.println("El número de asientos: " + elAsiento);
+// }
+
+// int n = 5;
+// int elFactorial = 1;
+
+// for (int i = 1; i <= n; i++) {
+//         elFactorial *= i;
+// }
+// System.out.println("El factorial de " + n + " es " + elFactorial);
+
+
+//Break and continue
 
   }
  }
