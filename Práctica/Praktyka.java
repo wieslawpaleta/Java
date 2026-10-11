@@ -646,7 +646,87 @@ public class Praktyka {
 
 
 //Break and continue
+// for (int i = 0; i < 10; i++) {
+//         if (i == 4) {
+//                 break;
+//         }
+//         System.out.println(i);
+// }
 
+// for (int i = 0; i < 10; i++) {
+//         if (i == 4) {
+//                 continue;
+//         }
+//         System.out.println(i);
+// }
+
+// for (int i = 0; i < 6; i++) {
+//         if (i == 2) {
+//                 continue;
+//         }
+//         if (i == 4) {
+//                 break;
+//         }
+//         System.out.println(i);
+// }
+
+// int i = 0;
+// while (i < 10) {
+//         System.out.println(i);
+//         i++;
+//         if (i == 4) {
+//                 break;
+//         }
+// }
+
+// int i = 0;
+// while (i < 10) {
+//         if (i == 4) {
+//                 i++;
+//                 continue;
+//         }
+//         System.out.println(i);
+//         i++;
+// }
+
+// int[] losNúmeros = {3, -1, 7, 0, 9};
+
+// for (int n : losNúmeros) {
+//         if (n < 0) {
+//                 continue;
+//         }
+//         if (n == 0) {
+//                 break;
+//         }
+//         System.out.println(n);
+// }
+
+
+//Arrays/Arrays
+// String[] losCoches = {"Volvo", "BMW", "Ford", "Mazda"};
+// System.out.println(losCoches[0]);
+
+// String[] losCoches = {"Volvo", "BMW", "Ford", "Mazda"};
+// losCoches[0] = "Opel";
+// System.out.println(losCoches[0]);
+
+// String[] losCoches = {"Volvo", "BMW", "Ford", "Mazda"};
+// System.out.println(losCoches.length);
+
+// String [] losCoches = new String[4];
+
+// losCoches[0] = "Volvo";
+// losCoches[1] = "BMw";
+// losCoches[2] = "Ford";
+// losCoches[3] = "Mazda";
+
+// System.out.println(losCoches[0]);
+
+// String[] losCoches = new String[] {"Volvo", "BMW", "Ford", "Mazda"};
+// System.out.println(losCoches[0]);
+
+
+//Arrays/Arrays Loop
   }
  }
 
