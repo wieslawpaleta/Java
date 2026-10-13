@@ -727,9 +727,105 @@ public class Praktyka {
 
 
 //Arrays/Arrays Loop
-  }
- }
+// String[] losCoches = {"Volvo", "BNW", "Ford", "Mazda"};
 
+// for (int i = 0; i < losCoches.length; i++){
+//         System.out.println(losCoches[i]);
+// }
+
+// int[] losNúmeros = {10, 20, 30, 40};
+
+// for (int i = 0; i < losNúmeros.length; i++) {
+//         System.out.println(losNúmeros[i]);
+// }
+
+// int[] losNúmeros = {1, 5, 10, 25};
+// int sum = 0;
+
+// for (int i = 0; i < losNúmeros.length; i++) {
+//         sum += losNúmeros[i];
+// }
+
+// System.out.println("La suma es: " + sum);
+
+//   }
+//  }
+
+// String[] losCoches = {"Volvo", "BMW", "Ford", "Mazda"};
+
+// for (String elCoche : losCoches) {
+//         System.out.println(elCoche);
+// }
+
+// String[] losAsientos = {"John", "Jenny", "Liam", "Bo"};
+
+// for (int i = 0; i < losAsientos.length; i++) {
+//         System.out.println("El asiento " + (i + 1) + ": " + losAsientos[i]);
+// }
+
+//Arrays/Real-life examples
+// int lasEdades[] = {20, 22, 18, 35, 48, 26, 87, 70};
+
+// float avg, sum = 0;
+
+// int  laLongitud = lasEdades.length;
+
+// for (int laEdad : lasEdades) {
+//         sum += laEdad;
+// }
+
+// avg = sum / laLongitud;
+
+// System.out.println("La edad media es: " + avg);
+
+// int lasEdades[] = {20, 22, 18, 35, 48, 26, 87, 70};
+
+// int laLongitud = lasEdades.length;
+
+// int laEdadMásBaja = lasEdades[0];
+
+// for (int laEdad : lasEdades) {
+//         if (laEdadMásBaja > laEdad) {
+//                 laEdadMásBaja = laEdad;
+//         }
+// }
+// System.out.println("La edad más baja en el array es: " + laEdadMásBaja);
+
+// int[] losNúmeros = {3, -1, 7, 0, 9};
+
+// for (int n : losNúmeros) {
+//         if (n < 0) {
+//                 continue;
+//         } if (n == 0) {
+//                 break;
+//         }
+//         System.out.println(n);
+// }
+
+// int[] losNúmeros = {45, 12, 98, 33, 27};
+
+// int max = losNúmeros[0];
+// int min = losNúmeros[0];
+
+// for (int n : losNúmeros) {
+//         if (n > max) {
+//                 max = n;
+//         }
+//         if (n < min) {
+//                 min = n;
+//         }
+// }
+// System.out.println("Max: " + max);
+// System.out.println("Min: " + min);
+
+// String[] asientos = {"Jenny", "Lian", "Angie", "Bo"};
+
+// for (int i = 0; i < asientos.length; i++) {
+//         System.out.println("El número de asientos " + i + " está ocupado por " + asientos[i]);
+// }
+
+    }
+}
 
 
 
