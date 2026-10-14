@@ -824,6 +824,22 @@ public class Praktyka {
 //         System.out.println("El número de asientos " + i + " está ocupado por " + asientos[i]);
 // }
 
+
+//Arrays/Multi-Dimensional Arrays
+int[][] misNúmeros = { {1, 4, 2}, {3, 6, 8, 5, 2}};
+System.out.println(misNúmeros[1][2]);
+misNúmeros[1][2] = 9;
+System.out.println(misNúmeros[1][2]);
+System.out.println("Filas: " + misNúmeros.length);
+System.out.println("Columnas en la fila 0: " + misNúmeros[0].length);
+System.out.println("Columnas en la fila 1: " + misNúmeros[1].length);
+
+for (int fila = 0; fila < misNúmeros.length; fila++) {
+        for (int columna = 0; columna < misNúmeros[fila].length; columna++) {
+                System.out.println("misNúmero[" + fila + "][" + columna + "] = " + misNúmeros [fila][columna]);
+        }
+}
+
     }
 }
 
