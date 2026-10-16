@@ -3,6 +3,20 @@
 /*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers, constants (final), Variables - Ejemplos, Variables code desafío, Tipos de datos, Numeros, Boolean Data Types, Characters, Data Types Examples */
 /*Recuerda que el nombre de la clase es el nombre del archivo*/
 public class Praktyka {
+        static void myMethod1() {
+                System.out.println("Brum Brum!");
+        }
+        static void myMethod2 (String fname) {
+                System.out.println(fname + " Agujero");
+        }
+        
+        static void verificarEdad(int laEdad) {
+
+        if (laEdad < 18) {
+                System.out.println();
+        }
+}
+
     public static void main(String[] args) {
 //         String nombre = "José";
 //         int edad = 100;
@@ -826,33 +840,40 @@ public class Praktyka {
 
 
 //Arrays/Multi-Dimensional Arrays
-int[][] misNúmeros = { {1, 4, 2}, {3, 6, 8, 5, 2}};
-// System.out.println(misNúmeros[1][2]);
-// misNúmeros[1][2] = 9;
-// System.out.println(misNúmeros[1][2]);
-// System.out.println("Filas: " + misNúmeros.length);
-// System.out.println("Columnas en la fila 0: " + misNúmeros[0].length);
-// System.out.println("Columnas en la fila 1: " + misNúmeros[1].length);
+// int[][] misNúmeros = { {1, 4, 2}, {3, 6, 8, 5, 2}};
+// // System.out.println(misNúmeros[1][2]);
+// // misNúmeros[1][2] = 9;
+// // System.out.println(misNúmeros[1][2]);
+// // System.out.println("Filas: " + misNúmeros.length);
+// // System.out.println("Columnas en la fila 0: " + misNúmeros[0].length);
+// // System.out.println("Columnas en la fila 1: " + misNúmeros[1].length);
 
-// for (int fila = 0; fila < misNúmeros.length; fila++) {
-//         for (int columna = 0; columna < misNúmeros[fila].length; columna++) {
-//                 System.out.println("misNúmero[" + fila + "][" + columna + "] = " + misNúmeros [fila][columna]);
+// // for (int fila = 0; fila < misNúmeros.length; fila++) {
+// //         for (int columna = 0; columna < misNúmeros[fila].length; columna++) {
+// //                 System.out.println("misNúmero[" + fila + "][" + columna + "] = " + misNúmeros [fila][columna]);
+// //         }
+// // }
+
+// for (int[] fila : misNúmeros) {
+//         for (int miNúmero : fila) {
+//                 System.out.println(miNúmero);
 //         }
 // }
-
-for (int[] fila : misNúmeros) {
-        for (int miNúmero : fila) {
-                System.out.println(miNúmero);
-        }
-}
 //Arrays/Code Challenge
 //Methods
-class myMethod {
-        void myMethod1() {
-                System.out.println("Brum Brum!");
-        }
+// myMethod1();
+// myMethod1();
+// myMethod1();
+
+//Methods/Code challenge
+//Methods/Parameters
+// myMethod2("Hugo");
+// myMethod2("Alvarez");
+// myMethod2("Silvia");
+
+
+
 }
-    }
 }
 
 
