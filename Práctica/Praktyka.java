@@ -3,19 +3,35 @@
 /*Java Syntax, Statements, Syntax Code Challenge, Output/Print, Output Numbers, Output Code Challenge, Comments, Variables, Print Variables, Declare Multiple Variables, identifiers, constants (final), Variables - Ejemplos, Variables code desafío, Tipos de datos, Numeros, Boolean Data Types, Characters, Data Types Examples */
 /*Recuerda que el nombre de la clase es el nombre del archivo*/
 public class Praktyka {
-        static void myMethod1() {
-                System.out.println("Brum Brum!");
-        }
-        static void myMethod2 (String fname) {
-                System.out.println(fname + " Agujero");
-        }
+//         static void myMethod1() {
+//                 System.out.println("Brum Brum!");
+//         }
+//         static void myMethod2 (String fname) {
+//                 System.out.println(fname + " Agujero");
+//         }
         
-        static void verificarEdad(int laEdad) {
+//         static void verificarEdad(int laEdad) {
 
-        if (laEdad < 18) {
-                System.out.println();
+//         if (laEdad < 18) {
+//                 System.out.println();
+//         }
+// }
+//         public static void miFuncción(String fname, int laEdad) {
+//                 System.out.println(fname + " is " + laEdad);
+//         }
+
+//         static void verificarEdad1(int laEdad) {
+                
+//                 if (laEdad < 18) {
+//                         System.out.println("Acceso denegado: ¡No tienes la edad suficiente!");
+//                 } else {
+//                         System.out.println("Acceso concedido: ¡Tienes la edad suficiente!");
+//                 }
+//         }
+
+        static int miMetodo(int x) {
+                return 5 + x;
         }
-}
 
     public static void main(String[] args) {
 //         String nombre = "José";
@@ -871,6 +887,10 @@ public class Praktyka {
 // myMethod2("Alvarez");
 // myMethod2("Silvia");
 
+// miFuncción("Pablo", 33);
+// verificarEdad1(20);
+//Method Parameters/Return Values
+        System.out.println(miMetodo(5));
 
 
 }
