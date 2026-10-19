@@ -29,9 +29,33 @@ public class Praktyka {
 //                 }
 //         }
 
-        static int miMetodo(int x) {
-                return 5 + x;
-        }
+        // static int miMetodo(int x) {
+        //         return 5 + x;
+        // }
+
+        // static int miMetodo1(int x, int y) {
+        //         return x + y;
+        // }
+
+        // static int miMetodo2(int x) {
+        //         return x * 2;
+        // }
+
+//         static int plusMethodInt(int x, int y) {
+//         return x + y;
+// }
+
+//         static double plusMethodDouble(double x, double y) {
+//                 return x + y;
+//         }
+
+//         static int plusMethod(int x, int y) {
+//         return x + y;
+// }
+
+//         static double plusMethod(double x, double y) {
+//                 return x + y;
+//         }
 
     public static void main(String[] args) {
 //         String nombre = "José";
@@ -890,8 +914,26 @@ public class Praktyka {
 // miFuncción("Pablo", 33);
 // verificarEdad1(20);
 //Method Parameters/Return Values
-        System.out.println(miMetodo(5));
+        // System.out.println(miMetodo(5));
+        // int z = miMetodo1(5, 3);
+        // System.out.println(z);
+        // for (int i = 1; i <= 5; i++) {
+        //         System.out.println("El doble de " + i + " es " +miMetodo2(i));
+        // }
 
+//Method Parameters/Code Challenge
+//Method Overloading
+        // int miNumero1 = plusMethodInt(8, 5);
+        // double miNumero2 = plusMethodDouble(4.3, 6.26);
+        // System.out.println("int: " + miNumero1);
+        // System.out.println("double: " + miNumero2);
+
+        // int miNumero1 = plusMethod(8, 5);
+        // double miNumero2 = plusMethod(4.3, 6.26);
+        // System.out.println("int: " + miNumero1);
+        // System.out.println("double: " + miNumero2);
+
+//Scope
 
 }
 }
