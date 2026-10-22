@@ -42,14 +42,14 @@ public class PiedraPapelTijeras {
 
         // Interpretación de la jugada del usuario
         int eleccionUsuario = convertir(sEleccionUsuario);
-        System.out.println("*** Interpretación" + eleccionUsuario);
+        System.out.println("*** Interpretación " + eleccionUsuario);
         if (eleccionUsuario == ERROR_NO_ENCONTRADA) {
             System.err.println(MSJ_ERROR_NO_ENCONTRADA);
         }
 
         // Calcular el ganador de la jugada
         int resultado = usuarioGana(eleccionPC, eleccionUsuario);
-        System.out.println ("*** Resultado: " + eleccionUsuario);
+        System.out.println ("*** Resultado: " + resultado);
 
         // cerramos lo que abrimos
         s.close();
