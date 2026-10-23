@@ -18,9 +18,15 @@ public class PiedraPapelTijeras {
     // Mensajes al usuario
     private static final String BIENVENIDA =
         "Bienvenido al juego Piedra-papel-tijeras!";
-    private static final String PEDIR_JUGADA = "¿Cuál es tu jugada? "
-        + PIEDRA + " (piedra), " + PAPEL + " (papel), "
-        + TIJERAS + " (tijeras) o " + SALIR + " (salir) ";
+    private static final String OPCIONES =
+        PIEDRA + " (piedra), " + PAPEL + " (papel), "
+        + TIJERAS + " (tijeras) o " + SALIR + " (salir)";
+    private static final String PEDIR_JUGADA = 
+        "¿Cuál es tu jugada? " + OPCIONES;
+    private static final String PEDIR_NUEVA_JUGADA = 
+        "¿Cuál es tu nueva jugada? " + OPCIONES;
+    private static final String FIN = "Fin de la partida";    
+    
     private static final String MSJ_ERROR_NO_ENCONTRADA = 
         "No entiendo tu jugada";
     
@@ -36,21 +42,38 @@ public class PiedraPapelTijeras {
         int eleccionPC = (int) (Math.random() * JUEGO.length);
         System.out.println("*** " + JUEGO[eleccionPC]);
         
-        // Jugada del usuario
-        String sEleccionUsuario = s.next();
-        System.out.println("*** Usuario " + sEleccionUsuario);
+        while(true) { // iteramos para siempre
+            // Jugada del ordenador
+            int eleccionPC = (int) (Math.random() * JUEGO.length);
 
-        // Interpretación de la jugada del usuario
-        int eleccionUsuario = convertir(sEleccionUsuario);
-        System.out.println("*** Interpretación " + eleccionUsuario);
-        if (eleccionUsuario == ERROR_NO_ENCONTRADA) {
-            System.err.println(MSJ_ERROR_NO_ENCONTRADA);
-        }
+            // Jugada del usuario
+            String sEleccionUsuario = s.next();
+            if (sEleccionUsuario.equalsIgnoreCase(SALIR)) {
+                break; // Si nos da una S, cortamos el bucle para terminar
+            }
 
-        // Calcular el ganador de la jugada
-        int resultado = usuarioGana(eleccionPC, eleccionUsuario);
-        System.out.println ("*** Resultado: " + resultado);
+            // Interpretación de la jugada del usuario
+            int eleccionUsuario = convertir(sEleccionUsuario);
+            System.out.println("*** Interpretación " + eleccionUsuario);
+            if (eleccionUsuario == ERROR_NO_ENCONTRADA) {
+                System.err.println(MSJ_ERROR_NO_ENCONTRADA);
+                continue; // Seguimos en el bucle, siguiente iteración
+            }
 
+            // Calcular el ganador de la jugada
+            int resultado = usuarioGana(eleccionPC, eleccionUsuario);
+       
+            // Mostrar el resultado de la jugada
+            switch (resultado) {
+                case GANAS:
+                    System.out.println("¡Enhorabuena! Tu "
+                        + JUEGO[eleccionUsuario] + " gana a "
+                        + JUEGO[eleccionPC]);
+                    break;
+                case PIERDES:
+                    System.out.println("¡Lo siento! Tu "
+                        + JUEGO[eleccionUsuario] + " pierde ante "
+                        + JUEGO[eleccionPC]);
         // cerramos lo que abrimos
         s.close();
     }
