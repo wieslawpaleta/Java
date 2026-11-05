@@ -56,9 +56,18 @@ public class GameModel {
         if (grid[2][0] == grid[2][1] && grid[2][1] == grid[2][2]) baseWin += grid[2][0].getBaseValue();
 
         // Diagonales (Przekątne)
-        if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2] baseWin += grid)
+        if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) baseWin += grid[0][0].getBaseValue();
+        if (grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2]) baseWin += grid[2][0].getBaseValue();
+
+        // Calcular ganancia total ajustada por la apuesta (Obliczenie całkowitej wygranej dostosowanej do zakładu)
+        int totalWin = baseWin * (currentBet / 10);
+        credit += totalWin;
+        return totalWin;
     }
 
-    // Calcular ganancia total ajustada por la apuesta (Obliczenie całkowitej wygranej dostosowanej do zakładu)
-    int
+    // Getters & Setters
+    public int getCredit() { return credit; }
+    public int getCurrentBet() { return currentBet; }
+    public void setCurrentBet(int currentBet) { this.currentBet = currentBet; }
+    public Symbol[][] getGrid() { return grid; }
 }
