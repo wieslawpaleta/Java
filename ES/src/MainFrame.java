@@ -6,8 +6,8 @@ import java.util.Random;
 
 // Clase para la interfaz gráfica (Klasa dla interfejsu graficznego)
 public class MainFrame extends JFrame {
-    
-    private final GameModel gamgModel;
+
+    private final GameModel gameModel;
     private final JLabel[][] slotLabels;
     private final JButton btnSpin;
     private final JComboBox<Integer> cbBet;
@@ -24,5 +24,56 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout(10, 10));
+
+        // 1. Header Panel (Górny panel)
+        JLabel title = new JLabel("ULTRA HOT", SwingConstants.CENTER);
+        title.setFont(new Font("Arial", Font.BOLD, 32));
+        title.setForeground(Color.RED);
+        add(title, BorderLayout.NORTH);
+
+        // 2. Grid Panel (Panel środkowy)
+        JPanel gridPanel = new JPanel(new GridLayout(3, 3, 5, 5));
+        gridPanel.setBackground(Color.BLACK);
+
+        for (int r = 0; r < 3; r++) {
+            for (int c = 0; c < 3; c++) {
+                slotLabels[r][c] = new JLabel("", SwingConstants.CENTER);
+                slotLabels[r][c].setOpaque(true);
+                slotLabels[r][c].setBackground(Color.DARK_GRAY);
+                updateLabelWithSymbol(slotLabels[r][c], gameModel.getGrid()[r][c]);
+                gridPanel.add(slotLabels[r][c]);
+            }
+        }
+        add(gridPanel, BorderLayout.CENTER);
+
+        // 3. Control Panel (Dolny panel)
+        JPanel controlPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
+
+        lblCredit = new JLabel("Crédito: " + gameModel.getCredit() + " ");
+        lblCredit.setFont(new Font("Arial", Font.BOLD, 16));
+
+        lblWin = new JLabel("Ganancia: 0 ");
+        lblWin.setFont(new Font("Arial", Font.BOLD, 16));
+
+        JLabel lblBetText = new JLabel("Apuesta (Zakład):");
+        lblBetText.setFont(new Font("Arial", Font.BOLD, 14));
+
+        Integer[] betOptions = {5, 10, 20, 50, 100};
+        cbBet = new JComboBox<>(betOptions);
+        cbBet.setSelectedItem(10);
+        cbBet.setFont(new Font("Arial", Font.BOLD, 14));
+        cbBet.addActionListener(e -> gameModel.setCurrentBet((Integer) cbBet.getSelectedItem()));
+
+        btnSpin = new JButton("START / SPIN");
+        btnSpin.setFont(new Font("Arial", Font.BOLD, 18));
+        btnSpin.setBackground(Color.ORANGE);
+        btnSpin.addActionListener(e -> startSpinAnimation());
+
+        controlPanel.add(lblCredit);
+        controlPanel.add(lblWin);
+        controlPanel.add(lblBetText);
+        controlPanel.add(cbBet);
+        controlPanel.add(btnSpin);
+
+        add(controlPanel, BorderLayout.SOUTH);
     }
-}
