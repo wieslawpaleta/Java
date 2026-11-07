@@ -77,3 +77,48 @@ public class MainFrame extends JFrame {
 
         add(controlPanel, BorderLayout.SOUTH);
     }
+
+    // Actualizar visualmente un JLabel segun el simbolo (Wizualna aktualizacja JLabel na podstawie symbolu)
+    private void updateLabelWithSymbol(JLabel, label, Symbol, symbol) {
+        ImageIcon icon = symbol.getIcon(100, 100);
+        if (icon != null) {
+            label.setIcon(icon);
+            label.setText("");
+        } else {
+            label.setIcon(null);
+            label.setText(symbol.getName());
+            label.setFont(new Font("Arial", Font.BOLD, 24));
+            label.setForeground(Color.YELLOW);
+        }
+    }
+
+    // Iniciar la animación y el proceso de giro (Uruchomienie animacji i procesu obrotu)
+    private void startSpinAnimation() {
+        if (!gameModel.canPlay()) {
+            JOptionPane.showMessageDialog(this, "¡No tienes suficiente credito! (Brak wystarczających środków)");
+            return;
+        }
+
+        gameModel.deductBet();
+        lblCredit.setText("Credito: " + gameModel.getCredit() + " ");
+        lblWin.setEnabled(false);
+
+        Symbol[] symbols = Symbol.values();
+
+        Timer spinTimer = new Timer(80, new ActionListener() {
+            private int counter = 0;
+
+            @Override 
+            public void actionPerformed(ActionEvent e) {
+                // Generar efecto visual de giro (Generowanie wizualnego efektu obrotu)
+                for (int r = 0; r < 3; r++) {
+                    for (int c = 0; c < 3; c++) {
+                        Symbol randomSymbol = symbols[random.nextInt(symbols.length)];
+                        updateLabelWithSymbol(slotLabels[r][c], randomSymbol);
+                    }
+                }
+
+                counter++;
+            }
+        }
+    }
