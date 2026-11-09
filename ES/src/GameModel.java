@@ -6,12 +6,14 @@ public class GameModel {
     private int credit;
     private int currentBet;
     private final Symbol[][] grid;
+    private final boolean[][] winningCells; // Matriz para marcar las casillas que forman parte de una línea ganadora (Macierz do zaznaczania pól tworzących linię wygrywającą)
     private final Random random;
 
     public GameModel(int initialCredit) {
         this.credit = initialCredit;
         this.currentBet = 10;
         this.grid = new Symbol[3][3];
+        this.winningCells = new boolean[3][3];
         this.random = new Random();
         initializeGrid();
     }
@@ -27,6 +29,8 @@ public class GameModel {
 
     // Generar nuevos símbolos aleatorios (Generowanie nowych losowych symboli)
     public Symbol[][] spin() {
+        clearWinningCells(); // Limpiar marcas anteriores antes de girar (Wyczyszczenie poprzednich oznaczeń przed obrotem)
+
         Symbol[] allSymbols = Symbol.values();
         for (int r = 0; r < 3; r++) {
             for (int c = 0; c < 3; c++) {
@@ -34,6 +38,13 @@ public class GameModel {
             }
         }
         return grid;
+    }
+
+    public void clearWinningCells() {
+        for (int r = 0; r < 3; r++) {
+            for (int c = 0; c < 3; c++)
+                winningCells[r][c] = false;
+        }
     }
 
     // Verificar si se puede realizar la apuesta (Sprawdzenie, czy można postawić zakład)

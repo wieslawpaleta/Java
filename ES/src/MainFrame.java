@@ -78,8 +78,8 @@ public class MainFrame extends JFrame {
         add(controlPanel, BorderLayout.SOUTH);
     }
 
-    // Actualizar visualmente un JLabel segun el simbolo (Wizualna aktualizacja JLabel na podstawie symbolu)
-    private void updateLabelWithSymbol(JLabel, label, Symbol, symbol) {
+    // Actualizar visualmente un JLabel según el símbolo (Wizualna aktualizacja JLabel na podstawie symbolu)
+    private void updateLabelWithSymbol(JLabel label, Symbol symbol) {
         ImageIcon icon = symbol.getIcon(100, 100);
         if (icon != null) {
             label.setIcon(icon);
@@ -95,20 +95,23 @@ public class MainFrame extends JFrame {
     // Iniciar la animación y el proceso de giro (Uruchomienie animacji i procesu obrotu)
     private void startSpinAnimation() {
         if (!gameModel.canPlay()) {
-            JOptionPane.showMessageDialog(this, "¡No tienes suficiente credito! (Brak wystarczających środków)");
+            JOptionPane.showMessageDialog(this, "¡No tienes suficiente crédito! (Brak wystarczających środków!)");
             return;
         }
 
         gameModel.deductBet();
-        lblCredit.setText("Credito: " + gameModel.getCredit() + " ");
-        lblWin.setEnabled(false);
+        lblCredit.setText("Crédito: " + gameModel.getCredit() + " ");
+        lblWin.setText("Ganancia: 0 ");
+
+        btnSpin.setEnabled(false);
+        cbBet.setEnabled(false);
 
         Symbol[] symbols = Symbol.values();
 
         Timer spinTimer = new Timer(80, new ActionListener() {
             private int counter = 0;
 
-            @Override 
+            @Override
             public void actionPerformed(ActionEvent e) {
                 // Generar efecto visual de giro (Generowanie wizualnego efektu obrotu)
                 for (int r = 0; r < 3; r++) {
@@ -119,6 +122,29 @@ public class MainFrame extends JFrame {
                 }
 
                 counter++;
+
+                if (counter > 15) {
+                    ((Timer) e.getSource()).stop();
+
+                    // Obtener resultado final real del Modelo (Pobranie ostatecznego wyniku z Modelu)
+                    Symbol[][] finalGrid = gameModel.spin();
+                    for (int r = 0; r < 3; r++) {
+                        for (int c = 0; c < 3; c++) {
+                            updateLabelWithSymbol(slotLabels[r][c], finalGrid[r][c]);
+                        }
+                    }
+
+                    // Obliczenie wygranych i aktualizacja (Calcular y actualizar estado)
+                    int winAmount = gameModel.calculateWin();
+                    lblWin.setText("Ganancia: " + winAmount + " ");
+                    lblCredit.setText("Crédito: " + gameModel.getCredit() + " ");
+
+                    btnSpin.setEnabled(true);
+                    cbBet.setEnabled(true);
+                }
             }
-        }
+        });
+
+        spinTimer.start();
     }
+}
