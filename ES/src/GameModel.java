@@ -1,6 +1,6 @@
 import java.util.Random;
 
-// Clase que maneja la lógica y las reglas del juego (Klasa zarządzająca logiką i zasadami gry)
+// Clase que maneja la lógica, el cálculo de premios y el registro de celdas ganadoras (Klasa zarządzająca logiką, obliczaniem nagród i rejestrowaniem wygrywających komórek)
 public class GameModel {
 
     private int credit;
@@ -18,7 +18,6 @@ public class GameModel {
         initializeGrid();
     }
 
-    // Inicializar rejilla con símbolos por defecto (Inicjalizacja siatki domyślnymi symbolami)
     private void initializeGrid() {
         for (int r = 0; r < 3; r++) {
             for (int c = 0; c < 3; c++) {
@@ -27,10 +26,9 @@ public class GameModel {
         }
     }
 
-    // Generar nuevos símbolos aleatorios (Generowanie nowych losowych symboli)
     public Symbol[][] spin() {
         clearWinningCells(); // Limpiar marcas anteriores antes de girar (Wyczyszczenie poprzednich oznaczeń przed obrotem)
-
+        
         Symbol[] allSymbols = Symbol.values();
         for (int r = 0; r < 3; r++) {
             for (int c = 0; c < 3; c++) {
@@ -42,41 +40,70 @@ public class GameModel {
 
     public void clearWinningCells() {
         for (int r = 0; r < 3; r++) {
-            for (int c = 0; c < 3; c++)
+            for (int c = 0; c < 3; c++) {
                 winningCells[r][c] = false;
+            }
         }
     }
 
-    // Verificar si se puede realizar la apuesta (Sprawdzenie, czy można postawić zakład)
     public boolean canPlay() {
         return credit >= currentBet;
     }
 
-    // Restar la apuesta del crédito (Odejmowanie zakładu od salda)
     public void deductBet() {
         credit -= currentBet;
     }
 
-    // Calcular las ganancias de las 5 líneas (Obliczanie wygranych z 5 linii)
+    // Método para calcular ganancias y marcar las celdas ganadoras (Metoda obliczająca wygrane i zaznaczająca wygrywające komórki)
     public int calculateWin() {
         int baseWin = 0;
+        clearWinningCells();
 
-        // Líneas horizontales (Poziome linie)
-        if (grid[0][0] == grid[0][1] && grid[0][1] == grid[0][2]) baseWin += grid[0][0].getBaseValue();
-        if (grid[1][0] == grid[1][1] && grid[1][1] == grid[1][2]) baseWin += grid[1][0].getBaseValue();
-        if (grid[2][0] == grid[2][1] && grid[2][1] == grid[2][2]) baseWin += grid[2][0].getBaseValue();
+        // Línea horizontal 1 (Pozioma linia 1)
+        if (grid[0][0] == grid[0][1] && grid[0][1] == grid[0][2]) {
+            baseWin += grid[0][0].getBaseValue();
+            winningCells[0][0] = true;
+            winningCells[0][1] = true;
+            winningCells[0][2] = true;
+        }
+        // Línea horizontal 2 (Pozioma linia 2)
+        if (grid[1][0] == grid[1][1] && grid[1][1] == grid[1][2]) {
+            baseWin += grid[1][0].getBaseValue();
+            winningCells[1][0] = true;
+            winningCells[1][1] = true;
+            winningCells[1][2] = true;
+        }
+        // Línea horizontal 3 (Pozioma linia 3)
+        if (grid[2][0] == grid[2][1] && grid[2][1] == grid[2][2]) {
+            baseWin += grid[2][0].getBaseValue();
+            winningCells[2][0] = true;
+            winningCells[2][1] = true;
+            winningCells[2][2] = true;
+        }
+        // Diagonal principal (Przekątna główna)
+        if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) {
+            baseWin += grid[0][0].getBaseValue();
+            winningCells[0][0] = true;
+            winningCells[1][1] = true;
+            winningCells[2][2] = true;
+        }
+        // Diagonal secundaria (Przekątna poboczna)
+        if (grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2]) {
+            baseWin += grid[2][0].getBaseValue();
+            winningCells[2][0] = true;
+            winningCells[1][1] = true;
+            winningCells[0][2] = true;
+        }
 
-        // Diagonales (Przekątne)
-        if (grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2]) baseWin += grid[0][0].getBaseValue();
-        if (grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2]) baseWin += grid[2][0].getBaseValue();
-
-        // Calcular ganancia total ajustada por la apuesta (Obliczenie całkowitej wygranej dostosowanej do zakładu)
         int totalWin = baseWin * (currentBet / 10);
         credit += totalWin;
         return totalWin;
     }
 
-    // Getters & Setters
+    public boolean[][] getWinningCells() {
+        return winningCells;
+    }
+
     public int getCredit() { return credit; }
     public int getCurrentBet() { return currentBet; }
     public void setCurrentBet(int currentBet) { this.currentBet = currentBet; }

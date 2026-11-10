@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
-// Clase para la interfaz gráfica (Klasa dla interfejsu graficznego)
+// Clase principal de la interfaz gráfica con efecto de fuego en líneas ganadoras (Główna klasa interfejsu z efektem ognia na liniach wygrywających)
 public class MainFrame extends JFrame {
 
     private final GameModel gameModel;
@@ -25,13 +25,13 @@ public class MainFrame extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout(10, 10));
 
-        // 1. Header Panel (Górny panel)
+        // Panel Superior (Górny panel)
         JLabel title = new JLabel("ULTRA HOT", SwingConstants.CENTER);
         title.setFont(new Font("Arial", Font.BOLD, 32));
         title.setForeground(Color.RED);
         add(title, BorderLayout.NORTH);
 
-        // 2. Grid Panel (Panel środkowy)
+        // Panel Central (Panel środkowy)
         JPanel gridPanel = new JPanel(new GridLayout(3, 3, 5, 5));
         gridPanel.setBackground(Color.BLACK);
 
@@ -46,7 +46,7 @@ public class MainFrame extends JFrame {
         }
         add(gridPanel, BorderLayout.CENTER);
 
-        // 3. Control Panel (Dolny panel)
+        // Panel Inferior (Dolny panel)
         JPanel controlPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
 
         lblCredit = new JLabel("Crédito: " + gameModel.getCredit() + " ");
@@ -78,8 +78,8 @@ public class MainFrame extends JFrame {
         add(controlPanel, BorderLayout.SOUTH);
     }
 
-    // Actualizar visualmente un JLabel según el símbolo (Wizualna aktualizacja JLabel na podstawie symbolu)
-    private void updateLabelWithSymbol(JLabel label, Symbol symbol) {
+    // Actualizar etiqueta aplicando color de fuego si es ganadora (Aktualizacja etykiety z zastosowaniem koloru ognia, jeśli jest wygrywająca)
+    private void updateLabelWithSymbol(JLabel label, Symbol symbol, boolean isWinning) {
         ImageIcon icon = symbol.getIcon(100, 100);
         if (icon != null) {
             label.setIcon(icon);
