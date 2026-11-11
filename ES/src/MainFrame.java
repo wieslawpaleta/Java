@@ -19,7 +19,7 @@ public class MainFrame extends JFrame {
         this.gameModel = new GameModel(1000);
         this.slotLabels = new JLabel[3][3];
 
-        setTitle("Ultra Hot Deluxe - Refactored POO Edition");
+        setTitle("Ultra Hot Deluxe - Fuego Edition");
         setSize(700, 550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -40,7 +40,7 @@ public class MainFrame extends JFrame {
                 slotLabels[r][c] = new JLabel("", SwingConstants.CENTER);
                 slotLabels[r][c].setOpaque(true);
                 slotLabels[r][c].setBackground(Color.DARK_GRAY);
-                updateLabelWithSymbol(slotLabels[r][c], gameModel.getGrid()[r][c]);
+                updateLabelWithSymbol(slotLabels[r][c], gameModel.getGrid()[r][c], false);
                 gridPanel.add(slotLabels[r][c]);
             }
         }
@@ -90,9 +90,15 @@ public class MainFrame extends JFrame {
             label.setFont(new Font("Arial", Font.BOLD, 24));
             label.setForeground(Color.YELLOW);
         }
+
+        // Si es una celda ganadora, cambiar fondo a color fuego/naranja brillante (Jeśli to wygrywająca komórka, zmień tło na kolor ognia/jasny pomarańcz)
+        if (isWinning) {
+            label.setBackground(new Color(255, 69, 0)); // Color rojo-naranja estilo fuego / Ognisty czerwono-pomarańczowy kolor
+        } else {
+            label.setBackground(Color.DARK_GRAY);
+        }
     }
 
-    // Iniciar la animación y el proceso de giro (Uruchomienie animacji i procesu obrotu)
     private void startSpinAnimation() {
         if (!gameModel.canPlay()) {
             JOptionPane.showMessageDialog(this, "¡No tienes suficiente crédito! (Brak wystarczających środków!)");
@@ -102,6 +108,13 @@ public class MainFrame extends JFrame {
         gameModel.deductBet();
         lblCredit.setText("Crédito: " + gameModel.getCredit() + " ");
         lblWin.setText("Ganancia: 0 ");
+
+        // Restablecer los colores de fondo antes de empezar a girar (Resetowanie kolorów tła przed rozpoczęciem kręcenia)
+        for (int r = 0; r < 3; r++) {
+            for (int c = 0; c < 3; c++) {
+                slotLabels[r][c].setBackground(Color.DARK_GRAY);
+            }
+        }
 
         btnSpin.setEnabled(false);
         cbBet.setEnabled(false);
@@ -113,11 +126,10 @@ public class MainFrame extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Generar efecto visual de giro (Generowanie wizualnego efektu obrotu)
                 for (int r = 0; r < 3; r++) {
                     for (int c = 0; c < 3; c++) {
                         Symbol randomSymbol = symbols[random.nextInt(symbols.length)];
-                        updateLabelWithSymbol(slotLabels[r][c], randomSymbol);
+                        updateLabelWithSymbol(slotLabels[r][c], randomSymbol, false);
                     }
                 }
 
@@ -126,16 +138,17 @@ public class MainFrame extends JFrame {
                 if (counter > 15) {
                     ((Timer) e.getSource()).stop();
 
-                    // Obtener resultado final real del Modelo (Pobranie ostatecznego wyniku z Modelu)
                     Symbol[][] finalGrid = gameModel.spin();
+                    int winAmount = gameModel.calculateWin();
+                    boolean[][] winningCells = gameModel.getWinningCells();
+
+                    // Mostrar el resultado final aplicando el efecto de fuego en las celdas ganadoras (Wyświetlenie ostatecznego wyniku z efektem ognia na wygrywających komórkach)
                     for (int r = 0; r < 3; r++) {
                         for (int c = 0; c < 3; c++) {
-                            updateLabelWithSymbol(slotLabels[r][c], finalGrid[r][c]);
+                            updateLabelWithSymbol(slotLabels[r][c], finalGrid[r][c], winningCells[r][c]);
                         }
                     }
 
-                    // Obliczenie wygranych i aktualizacja (Calcular y actualizar estado)
-                    int winAmount = gameModel.calculateWin();
                     lblWin.setText("Ganancia: " + winAmount + " ");
                     lblCredit.setText("Crédito: " + gameModel.getCredit() + " ");
 
