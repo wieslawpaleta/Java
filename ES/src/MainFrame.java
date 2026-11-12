@@ -119,6 +119,9 @@ public class MainFrame extends JFrame {
         btnSpin.setEnabled(false);
         cbBet.setEnabled(false);
 
+        // Reproducir sonido al iniciar el giro (Odtworzenie dźwięku przy rozpoczęciu obrotu)
+        SoundPlayer.playSound("spin.wav");
+
         Symbol[] symbols = Symbol.values();
 
         Timer spinTimer = new Timer(80, new ActionListener() {
@@ -147,6 +150,11 @@ public class MainFrame extends JFrame {
                         for (int c = 0; c < 3; c++) {
                             updateLabelWithSymbol(slotLabels[r][c], finalGrid[r][c], winningCells[r][c]);
                         }
+                    }
+
+                    // Si hay ganancia, reproducir sonido de premio (Jeśli jest wygrana, odtwórz dźwięk nagrody)
+                    if (winAmount > 0) {
+                        SoundPlayer.playSound("win.wav");
                     }
 
                     lblWin.setText("Ganancia: " + winAmount + " ");
