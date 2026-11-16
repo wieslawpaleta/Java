@@ -54,6 +54,11 @@ public class GameModel {
         credit -= currentBet;
     }
 
+    // Sumar el crédito final (w tym po ryzyku) (Dodanie ostatecznego kredytu w tym po ryzyku)
+    public void addCredit(int amount) {
+        credit += amount;
+    }
+
     // Método para calcular ganancias y marcar las celdas ganadoras (Metoda obliczająca wygrane i zaznaczająca wygrywające komórki)
     public int calculateWin() {
         int baseWin = 0;
@@ -95,9 +100,8 @@ public class GameModel {
             winningCells[0][2] = true;
         }
 
-        int totalWin = baseWin * (currentBet / 10);
-        credit += totalWin;
-        return totalWin;
+        // Retornamos el premio base ajustado, sin sumarlo aún al crédito (Zwracamy dostosowaną nagrodę bazową bez dodawania jej jeszcze do kredytu)
+        return baseWin * (currentBet / 10);
     }
 
     public boolean[][] getWinningCells() {

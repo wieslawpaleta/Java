@@ -152,10 +152,20 @@ public class MainFrame extends JFrame {
                         }
                     }
 
-                    // Si hay ganancia, reproducir sonido de premio (Jeśli jest wygrana, odtwórz dźwięk nagrody)
+                    // Si hay premio, reproducir sonido y abrir función de riesgo (Jeśli jest nagroda, odtwórz dźwięk i otwórz funkcję ryzyka)
                     if (winAmount > 0) {
                         SoundPlayer.playSound("win.wav");
+
+                        // Abrir la ventana de Gamble / Riesgo (Otworzenie okna Gamble / Ryzyko)
+                        GambleDialog gambleDialog = new GambleDialog(MainFrame.this, winAmount);
+                        gambleDialog.setVisible(true);
+
+                        // Obtener el premio final (puede ser el doble o 0 si perdió) (Pobranie ostatecznej nagrody - może być podwojona lub 0 w przypadku przegranej)
+                        winAmount = gambleDialog.getFinalWin();
                     }
+
+                    // Sumar el premio definitivo al modelo (Dodanie ostatecznej nagrody do modelu)
+                    gameModel.addCredit(winAmount);
 
                     lblWin.setText("Ganancia: " + winAmount + " ");
                     lblCredit.setText("Crédito: " + gameModel.getCredit() + " ");
